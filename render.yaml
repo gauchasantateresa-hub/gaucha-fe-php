@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: gaucha-fe-php
+    runtime: php
+    buildCommand: echo "Build OK"
+    startCommand: php -S 0.0.0.0:$PORT index.php
+    envVars:
+      - key: CERT_PIN
+        value: "5561"
+      - key: MH_USUARIO
+        value: "cpj-3-102-807442@prod.comprobanteselectronicos.go.cr"
+      - key: MH_PASSWORD
+        value: "D&^&cDVw6xzHQHIjP6Vc"
+      - key: WEBHOOK_SECRET
+        value: "gaucha2026"
